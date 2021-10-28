@@ -17,7 +17,7 @@ public class DictionaryTest {
     @Before
     public void initialize() {
         dic = new Dictionary("Example");
-        //List<String> traduc = new ArrayList<>();
+
 
 
     }
@@ -28,9 +28,7 @@ public class DictionaryTest {
 
         assertThat(dic.getName(), (equalTo("Example")));
     }
-   /* @Test public void doNthing(){
-        Assert.assertFalse(t);
-    }*/
+
 
     @Test
     public void testIsEmpty() {

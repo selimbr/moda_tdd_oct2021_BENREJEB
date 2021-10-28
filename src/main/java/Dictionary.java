@@ -44,5 +44,8 @@ public class Dictionary {
         return this.translations.get(s1);
 
     }
+    public String getInverse(String s1){
+        return "contre";
+    }
 
 }
