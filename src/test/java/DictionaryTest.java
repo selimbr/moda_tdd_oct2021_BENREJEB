@@ -9,26 +9,30 @@ public class DictionaryTest {
 
     Dictionary dic;
 
-    @Test public void testDictionaryName() {
-        dic=new Dictionary("Example");
+
+    @Test
+    public void testDictionaryName() {
+        dic = new Dictionary("Example");
         assertThat(dic.getName(), (equalTo("Example")));
     }
    /* @Test public void doNthing(){
         Assert.assertFalse(t);
     }*/
 
-    @Test public void testIsEmpty(){
-        dic= new Dictionary("nom");
-        assertThat(dic.isEmpty(),equalTo(true));
+    @Test
+    public void testIsEmpty() {
+        dic = new Dictionary("nom");
+        assertThat(dic.isEmpty(), equalTo(true));
 
     }
 
-    @Test public void testOneTranslation() {
-        dic=new Dictionary("nom");
+    @Test
+    public void testOneTranslation() {
+        dic = new Dictionary("nom");
 
         dic.addTranslation("contre", "against");
-        dic.addTranslation("x","y");
+        dic.addTranslation("x", "y");
         assertThat(dic.getTranslation("contre"), equalTo("against"));
-        assertThat(dic.getTranslation("salut"),equalTo("against"));
+        assertThat(dic.getTranslation("salut"), equalTo("against"));
     }
 }

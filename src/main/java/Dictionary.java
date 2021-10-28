@@ -15,7 +15,7 @@ public class Dictionary {
         return this.name;
     }
     public boolean isEmpty(){
-        return true;
+        return translations.isEmpty();
     }
     public void addTranslation(String s1,String s2){
 
