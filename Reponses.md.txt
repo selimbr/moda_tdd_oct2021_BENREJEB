@@ -1,3 +1,4 @@
 URL GIT :https://github.com/selimbr/moda_tdd_oct2021_BENREJEB.git
 
 
+5-ce que je remarque c'est la duplication du code  et on a creer l'attribut privé (name) et on adapte avec la methode getName pour pouvoir renvoyé le nom;
