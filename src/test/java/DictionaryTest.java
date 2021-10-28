@@ -18,8 +18,8 @@ public class DictionaryTest {
     }*/
 
     @Test public void testIsEmpty(){
-
-        assertThat(dic.isEmpty(),equalTo(false));
+        dic= new Dictionary("nom");
+        assertThat(dic.isEmpty(),equalTo(true));
 
     }
 }
