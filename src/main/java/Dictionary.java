@@ -45,7 +45,17 @@ public class Dictionary {
 
     }
     public String getInverse(String s1){
-        return "contre";
+        String s2= null;
+        for(String key: this.translations.keySet()) {
+             List<String> i = this.translations.get(key);
+                if (i.contains(s1)) {
+                    s2 = key;
+
+                    break;
+                }
+        }
+
+        return s2;
     }
 
 }
