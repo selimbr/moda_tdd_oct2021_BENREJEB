@@ -22,4 +22,9 @@ public class DictionaryTest {
         assertThat(dic.isEmpty(),equalTo(true));
 
     }
+
+    @Test public void testOneTranslation() {
+        dic.addTranslation("contre", "against");
+        assertThat(dic.getTranslation("contre"), equalsTo("against"));
+    }
 }
