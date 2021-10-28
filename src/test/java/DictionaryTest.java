@@ -10,7 +10,7 @@ public class DictionaryTest {
         dic=new Dictionary("Example");
         assertThat(dict.getName(), equalTo("Example"));
     }
-    @Test public void doNthing(){
-        Assert.assertFalse(false);
-    }
+   /* @Test public void doNthing(){
+        Assert.assertFalse(t);
+    }*/
 }
