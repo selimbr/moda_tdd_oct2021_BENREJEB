@@ -16,4 +16,10 @@ public class DictionaryTest {
    /* @Test public void doNthing(){
         Assert.assertFalse(t);
     }*/
+
+    @Test public void testIsEmpty(){
+
+        assertThat(dic.isEmpty(),equalTo(false));
+
+    }
 }

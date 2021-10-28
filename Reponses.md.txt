@@ -1,4 +1,10 @@
 URL GIT :https://github.com/selimbr/moda_tdd_oct2021_BENREJEB.git
 
+1- Construction de la classe de tests 'DictionaryTest'
 
-5-ce que je remarque c'est la duplication du code  et on a creer l'attribut privé (name) et on adapte avec la methode getName pour pouvoir renvoyé le nom;
+2- Creer un test generant un objet de type 'Dictionary'avec un nom,
+
+3- Creation d'unec lasse 'Dictionary' vide.
+4- méthode getName
+5-ce que je remarque c'est la duplication du code .
+6- on a creer l'attribut privé (name) et on adapte avec la methode getName pour pouvoir renvoyé le nom;
