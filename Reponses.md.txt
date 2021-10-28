@@ -1,24 +1,26 @@
 URL GIT :https://github.com/selimbr/moda_tdd_oct2021_BENREJEB.git
 
-1- Construction de la classe de tests 'DictionaryTest'
 
-2- Creer un test generant un objet de type 'Dictionary'avec un nom,
-
-3- Creation d'unec lasse 'Dictionary' vide.
-4- méthode getName
 5-ce que je remarque c'est la duplication du code .
-6- on a creer l'attribut (name) et on adapte avec la methode getName pour pouvoir renvoyé le nom;
 
 8-Le probleme avec la methode isEmpty ce que ce n'est pas une methode fiable car elle aura tout le temps la meme valeur de retour;
 
 /////////////////////////////////////////////Triangulation/////////////////////////////////
-1-Creation du test
 
 2-non ,la méthode addTranslation n'a pas la meme fonctionalité de la methode getTranslation
 
 /////////////////////Traduction multiple
 
 1-Pour pouvoir gerer les traductions multiple je pense qu'il faut ajouter a chaque mot une liste de mots qui le definnissent.
+
+
+
+
+////////////////Traduction inverse///
+
+3 la solution que j'ai apporté est une solution qui depend de chaque terme pour renvoyer la bonne valeu de retour
+alors que la premiere solution rapide avec un test fonctionnel
+
 
 
 

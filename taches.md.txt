@@ -1,0 +1,33 @@
+1- Construction de la classe de tests 'DictionaryTest'
+
+2- Creer un test generant un objet de type 'Dictionary'avec un nom,
+
+3- Creation d'unec lasse 'Dictionary' vide.
+4- méthode getName
+
+
+6- on a creer l'attribut (name) et on adapte avec la methode getName pour pouvoir renvoyé le nom;
+
+8-Le probleme avec la methode isEmpty ce que ce n'est pas une methode fiable car elle aura tout le temps la meme valeur de retour;
+
+
+/////////////////////////////////////////////Triangulation/////////////////////////////////
+1-Creation du test
+
+
+
+////////////////////Traductions multiples
+
+1-Ajout de test permettant la traduction d'un mot avec 2 sens;
+
+4.1Modification de addTranslation en joutant la table de hachage creation de la methode getMultipleTranslation qui renvoie la liste de tradction
+
+4.2Adaptation du test utilisant  getTranslation et utilisant getMultipleTranslations
+
+////////////////////Traduction inverse/////
+
+1-Test verifiant le fonctionnement de traduction inverse
+
+2-Creation methode getInver avec un retour fixe pour atteindre la green bar
+
+3-implementation de la fonction getInverse pour avoir les bons resultats
