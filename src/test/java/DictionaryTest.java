@@ -2,8 +2,12 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.containsInAnyOrder;
 
 
 public class DictionaryTest {
@@ -12,6 +16,8 @@ public class DictionaryTest {
     @Before
     public void initialize () {
         dic = new Dictionary("Example");
+        List<String> traduc = new ArrayList<>();
+
     }
 
 
@@ -39,5 +45,17 @@ public class DictionaryTest {
         dic.addTranslation("x", "y");
         assertThat(dic.getTranslation("contre"), equalTo("against"));
         assertThat(dic.getTranslation("salut"), equalTo("against"));
+    }
+
+
+    @Test public void testUnmotDeuxdef(){
+        dic.addTranslation("bonjour","hello");
+        dic.addTranslation("bonjour","Good morning");
+
+        assertThat(dic.getTranslation("hello"),containsInAnyOrder("hello","Good morning"));
+
+
+
+
     }
 }
