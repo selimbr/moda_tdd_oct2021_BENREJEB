@@ -62,6 +62,13 @@ public class DictionaryTest {
         assertThat(dic.getMultipleTranslation("salut"), containsInAnyOrder("hello", "GoodMorning"));
 
     }
+    @Test
+    public void TestTraductionInverse()
+    {
+        assertThat(dic.getInverse("against"),equalTo("contre"));
+    }
+
+
 
 
 }
