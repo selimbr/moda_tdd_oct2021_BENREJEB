@@ -7,4 +7,6 @@ URL GIT :https://github.com/selimbr/moda_tdd_oct2021_BENREJEB.git
 3- Creation d'unec lasse 'Dictionary' vide.
 4- méthode getName
 5-ce que je remarque c'est la duplication du code .
-6- on a creer l'attribut privé (name) et on adapte avec la methode getName pour pouvoir renvoyé le nom;
+6- on a creer l'attribut (name) et on adapte avec la methode getName pour pouvoir renvoyé le nom;
+
+8-Le probleme avec la methode isEmpty ce que ce n'est pas une methode fiable car elle aura tt le temps la meme valeur de retour;
