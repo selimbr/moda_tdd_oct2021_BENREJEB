@@ -13,10 +13,11 @@ import static org.hamcrest.Matchers.containsInAnyOrder;
 public class DictionaryTest {
 
     Dictionary dic;
+
     @Before
-    public void initialize () {
+    public void initialize() {
         dic = new Dictionary("Example");
-        List<String> traduc = new ArrayList<>();
+        //List<String> traduc = new ArrayList<>();
 
 
     }
@@ -49,20 +50,18 @@ public class DictionaryTest {
     }
 
     @Test
-    public void testMulpTranslation() {
+    public void testMultpTranslation() {
 
         List<String> traduc = new ArrayList<>();
+        dic.addTranslation("salut","hello");
+        dic.addTranslation("salut","GoodMorning");
         traduc.add("hello");
         traduc.add("GoodMorning");
-        assertThat(traduc, containsInAnyOrder("hello","GoodMorning"));
+
+
+        assertThat(dic.getMultipleTranslation("salut"), containsInAnyOrder("hello", "GoodMorning"));
 
     }
-
-
-
-
-
-
 
 
 }
