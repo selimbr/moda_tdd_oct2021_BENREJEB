@@ -11,4 +11,12 @@ public class Dictionary {
     public boolean isEmpty(){
         return true;
     }
+    public void addTranslation(String s1,String s2){
+
+    }
+    public String getTranslation(){
+        return "";
+
+    }
+
 }
