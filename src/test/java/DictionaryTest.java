@@ -18,6 +18,7 @@ public class DictionaryTest {
         dic = new Dictionary("Example");
         List<String> traduc = new ArrayList<>();
 
+
     }
 
 
@@ -47,15 +48,19 @@ public class DictionaryTest {
         assertThat(dic.getTranslation("salut"), equalTo("against"));
     }
 
+    @Test
+    public void testMulpTranslation() {
 
-    @Test public void testUnmotDeuxdef(){
-        dic.addTranslation("bonjour","hello");
-        dic.addTranslation("bonjour","Good morning");
-
-        assertThat(dic.getTranslation("hello"),containsInAnyOrder("hello","Good morning"));
-
-
-
+        List<String> traduc = new ArrayList<>();
+        traduc.add("hello");
+        traduc.add("GoodMorning");
+        assertThat(traduc, containsInAnyOrder("hello","GoodMorning"));
 
     }
+
+
+
+
+
+
 }
